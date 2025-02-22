@@ -13,6 +13,7 @@ This is a simple Minecraft bot using [Mineflayer](https://github.com/PrismarineJ
 ## Features
 - Connects to a Minecraft server
 - Replies to chat messages
+- Movement
 
 ## Installation
 1. Install [Node.js](https://nodejs.org/).
