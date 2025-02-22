@@ -24,5 +24,9 @@ setInterval(() => {
     const yaw = Math.random() * Math.PI * 2;
     bot.look(yaw, 0, false);
     bot.setControlState('forward', true);
-    setTimeout(() => bot.setControlState('forward', false), 1000); // Move for 1 second
+    bot.setControlState('jump', true);
+    setTimeout(() => {
+        bot.setControlState('forward', false);
+        bot.setControlState('jump', false);
+    }, 1000); // Move and jump for 1 second Jumping is not fully functional!
 }, 10000);
