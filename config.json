@@ -1,0 +1,6 @@
+{
+  "server_ip": "you_serverIP",
+  "server_port": 25565,
+  "bot_username": "customUsername",
+  "version": "server_version"
+}
