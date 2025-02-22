@@ -19,3 +19,10 @@ bot.on('chat', (username, message) => {
 
 bot.on('error', (err) => console.log(`Error: ${err}`));
 bot.on('end', () => console.log('Bot disconnected.'));
+
+setInterval(() => {
+    const yaw = Math.random() * Math.PI * 2;
+    bot.look(yaw, 0, false);
+    bot.setControlState('forward', true);
+    setTimeout(() => bot.setControlState('forward', false), 1000); // Move for 1 second
+}, 10000);
